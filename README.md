@@ -7,7 +7,11 @@ Prerequisites:
 - Python package [nwtools](https://github.com/PhD-Dafne/network-tools). You can install it with: `pip install -e https://github.com/PhD-Dafne/network-tools`.
 
 ## scripts
-`run_consistency.py`:
+### run_consistency.py
+Read a node file and edge file, and run consensus clustering for a specific threshold, and calculate edge and node consistency scores.
+
+Example usage: `python scripts/run_consistency.py data/edges.csv data/nodes.csv`
+
 ```
 Usage: run_consistency.py [OPTIONS] EDGE_FILE NODE_FILE
 
@@ -21,11 +25,10 @@ Options:
   -o, --out_dir PATH
   --help
 ```
-- Read a node file and edge file, and run consensus clustering for a specific threshold, and calculate edge and node consistency scores.
-- Example usage: `python scripts/run_consistency.py data/edges.csv data/nodes.csv`
 
 
-`consensus_clustering.py`:
+### consensus_clustering.py
+Runs consensus clustering for different thresholds, with the same initial partitions that it reads from a file on `DATAPATH`
 ```
 Usage: consensus_clustering.py [OPTIONS] DATAPATH
 
@@ -34,5 +37,5 @@ Options:
   -o, --out_dir PATH
   --help
 ```
-- Runs consensus clustering for different thresholds, with the same initial partitions that it reads from a file on `DATAPATH`
+
 
