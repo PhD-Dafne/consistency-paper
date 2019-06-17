@@ -21,6 +21,7 @@ def load_graph(edge_file, node_file, sepn=',', sepe=',', idcol='id', weightcol='
     edges_df['Target'] = target
     
     nodes = pd.read_csv(node_file, index_col=idcol, sep=sepn)
+    nodes.index = nodes.index.astype(str)
     
     graph = nwtools.common.igraph_from_pandas_edgelist(edges_df, attributes=['weight', 'distance'])
     
