@@ -38,4 +38,6 @@ Options:
   --help
 ```
 
+## Notebooks
+There is a [notebook](https://github.com/PhD-Dafne/consistency-paper/blob/master/notebooks/Countries.ipynb) with the plots in the paper, as well as some further exploration, on an example data set.
 
