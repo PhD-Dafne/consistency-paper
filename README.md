@@ -4,7 +4,7 @@ Code and documentation for the consitency paper
 ## Installation
 Prerequisites:
 - Python 3.5 or 3.6
-- Python package [nwtools](https://github.com/PhD-Dafne/network-tools). You can install it with: `pip install -e https://github.com/PhD-Dafne/network-tools`.
+- Python package [nwtools](https://github.com/research-Dafne/network-tools). You can install it with: `pip install -e https://github.com/research-Dafne/network-tools`.
 
 ## scripts
 ### run_consistency.py
@@ -38,4 +38,6 @@ Options:
   --help
 ```
 
+## Notebooks
+There is a [notebook](https://github.com/research-Dafne/consistency-paper/blob/master/notebooks/Countries.ipynb) with the plots in the paper, as well as some further exploration, on an example data set.
 
